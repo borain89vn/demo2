@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/bg_dark_blue_btn" android:state_enabled="true" android:state_pressed="true"/>
+	<item android:drawable="@drawable/bg_blue_btn" android:state_enabled="true"/>
+	<item android:drawable="@drawable/bg_gray_btn" android:state_enabled="false"/>
+</selector>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android" >   
+	<item android:state_enabled="false">
+		<shape>
+	        <gradient
+	            android:startColor="@color/grey_app"
+	            android:endColor="@color/grey_app"
+	            android:centerColor="@color/grey_app"
+	            android:angle="270" />
+		    <solid
+		        android:color="@color/grey_app" />
+		    <stroke
+		        android:width="0dp"
+		        android:color="#1B5E91" />
+		    <corners
+				android:topRightRadius="@dimen/corner"
+		        android:bottomRightRadius="@dimen/corner"
+		        />          
+		</shape>  
+ 	</item>
+    <item android:state_enabled="true">
+	    <shape>
+	        <gradient
+	            android:startColor="@color/green_sky_landing"
+	            android:endColor="@color/green_sky_landing"
+	            android:centerColor="@color/green_sky_landing"
+	            android:angle="270" />
+		    <solid
+		        android:color="@color/green_sky_landing" />
+	        <stroke
+	            android:width="0dp"
+	            android:color="#1B5E91" />
+	        <corners
+				android:topRightRadius="@dimen/corner"
+		        android:bottomRightRadius="@dimen/corner"
+		        />
+	    </shape>
+	</item>
+	<item android:state_enabled="true" android:state_pressed="true" >
+		<shape>
+	        <gradient
+	            android:startColor="@color/blue_landing"
+	            android:endColor="@color/blue_landing"
+	            android:centerColor="@color/blue_landing"
+	            android:angle="270" />
+		    <solid
+		        android:color="@color/blue_landing" />
+		    <stroke
+		        android:width="0dp"
+		        android:color="#1B5E91" />
+		    <corners
+				android:topRightRadius="@dimen/corner"
+		        android:bottomRightRadius="@dimen/corner"
+		        />          
+		</shape>  
+ 	</item>
+</selector>-->

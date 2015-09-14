@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Sorted by"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_sky_landing"
+        android:layout_marginTop="@dimen/pad_top_bottom_popup_sort"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginBottom="@dimen/pad_top_bottom_popup_sort"
+        local:typeface="arial_normal"
+        android:id="@+id/sort_title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green_sky_landing" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_priority_sort"
+        android:layout_marginTop="@dimen/pad_top" />
+</LinearLayout>

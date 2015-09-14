@@ -1,0 +1,16 @@
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Runtime.Serialization.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/TeleconsultIOS.exe
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Xml.Linq.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Xml.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/Xamarin.iOS.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Core.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Net.Http.Extensions.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/mscorlib.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/Newtonsoft.Json.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/Mono.CSharp.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/Microsoft.CSharp.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/Microsoft.AspNet.SignalR.Client.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Net.Http.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/Mono.Dynamic.Interpreter.dll
+/Users/imanust/Working/XCodeWorkspaces/Teleconsult/GitCodes/TeleConsultAndroid/Teleconsult/Teleconsult.IOS/obj/iPhone/Ad-Hoc/mtouch-cache/32/Link/System.Web.Services.dll

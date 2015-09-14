@@ -1,0 +1,1 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@drawable/ic_search_selected_tabbar" android:state_selected="true" /><item android:drawable="@drawable/ic_search_unselect_tabbar" /></selector>

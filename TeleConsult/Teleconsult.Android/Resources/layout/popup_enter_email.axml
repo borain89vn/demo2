@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/white">
+    <TextView
+        android:text="@string/sendEmailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green_sky_landing"
+        android:layout_marginTop="@dimen/pad_top_popup"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginRight="@dimen/pad_left_header"
+        local:typeface="arial_normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/pad_top_popup"
+        android:background="@color/green_sky_landing" />
+    <EditText
+        android:id="@+id/edit_enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/pad_top"
+        android:hint="@string/enter_email"
+        android:layout_weight="1"
+        android:minHeight="70dp"
+        android:gravity="top"
+        android:maxHeight="70dp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_border_edittext"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginRight="@dimen/pad_left_header"
+        android:textSize="15dp"
+        local:typeface="arial_normal" />
+    <TextView
+        android:text="@string/enter_email_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginRight="@dimen/pad_left_header"
+        android:layout_marginTop="@dimen/pad_top_home"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        local:typeface="arial_normal" />
+    <EditText
+        android:id="@+id/edit_my_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_top_home"
+        android:hint="@string/my_email_hint"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_border_edittext"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginRight="@dimen/pad_left_header"
+        android:minHeight="30dp"
+        android:singleLine="true"
+        android:textSize="15dp"
+        local:typeface="arial_normal" />
+    <EditText
+        android:id="@+id/edit_enter_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/pad_top_home"
+        android:hint="@string/comment_email_hint"
+        android:layout_weight="1"
+        android:minHeight="60dp"
+        android:gravity="top"
+        android:maxHeight="60dp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_border_edittext"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginRight="@dimen/pad_left_header"
+        android:textSize="15dp"
+        local:typeface="arial_normal" />
+    <View
+        android:layout_marginTop="@dimen/pad_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line_popup" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelSendEmail"
+            android:layout_weight="1"
+            android:textColor="@color/btn_popup_color"
+            android:background="@drawable/custom_button_no_border"
+            local:typeface="arial_normal" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line_popup" />
+        <Button
+            android:text="Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSendEmail"
+            android:layout_weight="1"
+            android:textColor="@color/btn_popup_color"
+            android:background="@drawable/custom_button_no_border"
+            local:typeface="arial_normal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameLayout1"
+    android:background="@color/bg_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llButtonSegmented"
+            android:background="@drawable/custom_ll_control_segmented"
+            android:layout_marginLeft="@dimen/pad_left_header"
+            android:layout_marginRight="@dimen/pad_left_header"
+            android:layout_marginTop="@dimen/pad_top_bottom_btn_segmented"
+            android:layout_marginBottom="@dimen/pad_top_bottom_btn_segmented"
+            android:visibility="gone">
+            <Button
+                android:text="All"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnAll"
+                android:background="@drawable/custom_button_segmented_left"
+                android:textColor="@color/white"
+                android:layout_weight="1" />
+            <Button
+                android:text="Completed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnComplete"
+                android:background="@drawable/custom_button_segmented_right"
+                android:textColor="@color/green_sky_landing"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:id="@+id/viewSegmented"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:visibility="gone" />
+        <ListView
+            android:id="@+id/user_dashboard_list_result"
+            android:background="@color/bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include
+        layout="@layout/indicator_progressbar_layout" />
+</FrameLayout>

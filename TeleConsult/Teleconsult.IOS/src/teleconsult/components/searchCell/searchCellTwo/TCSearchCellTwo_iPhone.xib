@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="cxk-wN-pdQ" customClass="TCSearchCellTwo">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rate_icon" translatesAutoresizingMaskIntoConstraints="NO" id="voI-fY-KZc">
+                        <rect key="frame" x="55" y="106" width="12" height="12"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4star_icon" translatesAutoresizingMaskIntoConstraints="NO" id="s8v-cC-1W4">
+                        <rect key="frame" x="55" y="47" width="70" height="12"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-Wq-dRl">
+                        <rect key="frame" x="55" y="86" width="12" height="12"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noavatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-kA-rhb">
+                        <rect key="frame" x="6" y="8" width="40" height="40"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vang Doan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oly-IY-2aC">
+                        <rect key="frame" x="55" y="3" width="260" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.058823529409999999" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="wfL-lg-JbO">
+                        <rect key="frame" x="18" y="18" width="20" height="20"/>
+                        <color key="color" red="0.14901960780000001" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maybe Available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO4-n8-F2p">
+                        <rect key="frame" x="72" y="82" width="78" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.36470588240000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22222.2 km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFR-Qz-cej">
+                        <rect key="frame" x="163" y="82" width="57" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.36470588240000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="distance_icon" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-Fa-bFV">
+                        <rect key="frame" x="149" y="85" width="10" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$200.00 - 123.25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCJ-eU-CMn">
+                        <rect key="frame" x="72" y="102" width="239" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.36470588240000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur Lorem ipsum dolor sit er elit lamet, consectetaur  " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfY-Fs-WlJ">
+                        <rect key="frame" x="55" y="119" width="265" height="30"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doctor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gO-XA-rFj">
+                        <rect key="frame" x="55" y="23" width="256" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2244/8240 On-time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-Bs-QzB">
+                        <rect key="frame" x="234" y="82" width="86" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.36470588240000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="on_time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-2X-iCS">
+                        <rect key="frame" x="218" y="84" width="16" height="16"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unlicense (not required)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIR-Ti-ek2">
+                        <rect key="frame" x="71" y="64" width="241" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <color key="textColor" red="0.23529411759999999" green="0.36470588240000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expired_icon" translatesAutoresizingMaskIntoConstraints="NO" id="esE-lP-uLY">
+                        <rect key="frame" x="53" y="66" width="16" height="16"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="OHM-kA-rhb" id="ZXu-vx-Uy2"/>
+                <outlet property="imageLicense" destination="esE-lP-uLY" id="fMl-6n-8dr"/>
+                <outlet property="imageOnTime" destination="X4Y-2X-iCS" id="Na3-Ue-CDH"/>
+                <outlet property="imageRate" destination="s8v-cC-1W4" id="NhE-Jt-XHn"/>
+                <outlet property="indicator" destination="wfL-lg-JbO" id="kgN-vq-i7S"/>
+                <outlet property="lbDescription" destination="FfY-Fs-WlJ" id="cUP-Ah-f86"/>
+                <outlet property="lbDistance" destination="nFR-Qz-cej" id="JbH-HI-I25"/>
+                <outlet property="lbFullName" destination="oly-IY-2aC" id="ofD-wI-btG"/>
+                <outlet property="lbLicense" destination="DIR-Ti-ek2" id="oOP-ut-BgH"/>
+                <outlet property="lbOnTime" destination="Ha8-Bs-QzB" id="7lh-4b-90P"/>
+                <outlet property="lbSpecialisation" destination="0gO-XA-rFj" id="wNB-Jl-ifo"/>
+                <outlet property="lbStatusConsultant" destination="zO4-n8-F2p" id="jYv-8I-alq"/>
+                <outlet property="lbTalkNowRate" destination="FCJ-eU-CMn" id="Jwq-Iv-bIg"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="316"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="4star_icon" width="118" height="26"/>
+        <image name="book_icon" width="160" height="160"/>
+        <image name="distance_icon" width="160" height="160"/>
+        <image name="expired_icon" width="11" height="11"/>
+        <image name="noavatar.png" width="160" height="160"/>
+        <image name="on_time_icon" width="16" height="16"/>
+        <image name="rate_icon" width="41" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

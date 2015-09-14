@@ -1,0 +1,28 @@
+﻿<Properties StartupItem="Teleconsult.IOS\Teleconsult.IOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Teleconsult.Android\Resources\Resource.designer.cs">
+    <Files>
+      <File FileName="Teleconsult.Android\Resources\Resource.designer.cs" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\Resources\AboutResources.txt" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\Properties\AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\Resources\values\dimen.xml" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\src\com\teleconsult\ui\SpecialistDetailActivity.cs" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\src\com\teleconsult\tabUserDashBoard\PastHistoryDetail.cs" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\src\com\teleconsult\ui\CallingDurationActivity.cs" Line="1" Column="1" />
+      <File FileName="Teleconsult.Android\src\com\teleconsult\ui\Background.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="E:\GkimProject\150601-teleconsult-mobile\TeleConsult\Teleconsult.Android\src\com\teleconsult\ui\SpecialistDetailActivity.cs" line="103" column="1" />
+      <Breakpoint file="E:\GkimProject\150601-teleconsult-mobile\TeleConsult\Teleconsult.Android\src\com\teleconsult\ui\SpecialistDetailActivity.cs" line="210" column="1" />
+      <Breakpoint file="E:\GkimProject\150601-teleconsult-mobile\TeleConsult\Teleconsult.Android\src\com\teleconsult\ui\SpecialistDetailActivity.cs" line="211" column="1" />
+      <Breakpoint file="E:\GkimProject\150601-teleconsult-mobile\TeleConsult\Teleconsult.Android\Resources\Resource.designer.cs" line="4" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Teleconsult.Android\MainActivity.cs" line="54" offsetX="557" offsetY="848" expression="Utils._states" liveUpdate="False" />
+    <Watch file="Teleconsult.Android\src\com\teleconsult\ui\Customer_register_step1_activity.cs" line="58" offsetX="340" offsetY="912" expression="input" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.Teleconsult.Android AndroidDesignerPreferredDevice="4.65&quot; 720p (Galaxy Nexus)" />
+</Properties>

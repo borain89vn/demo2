@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TextView
+        android:text="Title of popup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv_title_confirm_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/green_sky_landing"
+        android:layout_marginTop="@dimen/pad_top_popup"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        local:typeface="arial_normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/pad_top_popup"
+        android:background="@color/green_sky_landing" />
+    <TextView
+        android:text="Information for Customer or Specialist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_top"
+        android:id="@+id/tv_info_popup"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:textSize="@dimen/text_size_notice"
+        android:layout_marginLeft="@dimen/pad_left_header"
+        android:layout_marginRight="@dimen/pad_left_header"
+        local:typeface="arial_normal" />
+    <View
+        android:layout_marginTop="@dimen/pad_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line_popup" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:text="@string/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_decline_tv_popup"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_no_border"
+            android:textColor="@color/btn_popup_color"
+            local:typeface="arial_normal" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line_popup" />
+        <Button
+            android:text="@string/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_confirm_tv_popup"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_no_border"
+            android:textColor="@color/btn_popup_color"
+            local:typeface="arial_normal" />
+    </LinearLayout>
+</LinearLayout>

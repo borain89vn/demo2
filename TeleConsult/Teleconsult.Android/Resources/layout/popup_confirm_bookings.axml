@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            layout="@layout/header_layout" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bg_color">
+            <LinearLayout
+                android:orientation="vertical"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/pad_left_header"
+                android:layout_marginRight="@dimen/pad_left_header">
+                <ImageView
+                    android:src="@drawable/special_home"
+                    android:layout_width="@dimen/wh_avatar"
+                    android:layout_height="@dimen/wh_avatar"
+                    android:id="@+id/avatar_popup_booking"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_top" />
+                <TextView
+                    android:text="First name - Last name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name_popup_booking"
+                    android:gravity="center"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_content_dashboard_size"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    local:typeface="arial_normal" />
+                <TextView
+                    android:id="@+id/tv_title_proposed_time"
+                    android:text="PROPOSED TIME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top_first_tv_booking"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_button_dashboard_size"
+                    local:typeface="arial_normal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/pad_top_home"
+                    android:background="@color/line_booking"
+                    android:layout_marginBottom="@dimen/pad_bottom" />
+                <TextView
+                    android:text="TODAY 1:00PM - 1:30MP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_time_popup_booking"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_button_dashboard_size"
+                    local:typeface="arial_normal" />
+                <TextView
+                    android:text="APPLICABLE COST"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_button_dashboard_size"
+                    android:id="@+id/tv_title_cost_confirm"
+                    local:typeface="arial_normal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/pad_top_home"
+                    android:background="@color/line_booking"
+                    android:layout_marginBottom="@dimen/pad_bottom" />
+                <TextView
+                    android:text="$12 per minute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_fee_popup_booking"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_button_dashboard_size"
+                    local:typeface="arial_normal" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llGroupEnquiry"
+                    android:layout_marginTop="@dimen/pad_top">
+                    <TextView
+                        android:text="NATURE OF ENQUIRY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:textSize="@dimen/text_button_dashboard_size"
+                        local:typeface="arial_normal" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:background="@color/line_booking"
+                        android:layout_marginBottom="@dimen/pad_bottom" />
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_enquiry_booking"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_button_dashboard_size"
+                        local:typeface="arial_normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llGroupFileAttachBooking"
+                    android:layout_marginTop="@dimen/pad_top">
+                    <TextView
+                        android:text="ATTACHMENT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:textSize="@dimen/text_button_dashboard_size"
+                        local:typeface="arial_normal" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:background="@color/line_booking"
+                        android:layout_marginBottom="@dimen/pad_bottom" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llFileAttachConfirmed"
+                    android:layout_marginBottom="@dimen/pad_top_signin_lading" />
+                <Button
+                    android:text="@string/reschedule_button_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_request_talknow_booking"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_border_select"
+                    android:layout_marginTop="@dimen/pad_top"
+                    android:textSize="@dimen/text_button_size"
+                    android:textStyle="bold"
+                    local:typeface="arial_normal" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_addfile_confirm_booking"
+                    android:text="@string/confirm_button_title"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_border_select"
+                    android:layout_marginTop="@dimen/pad_top"
+                    android:textSize="@dimen/text_button_size"
+                    android:textStyle="bold"
+                    local:typeface="arial_normal" />
+                <Button
+                    android:text="@string/decline_button_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_decline_confirm_booking"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_border_select"
+                    android:layout_marginBottom="@dimen/pad_top"
+                    android:layout_marginTop="@dimen/pad_top"
+                    android:textSize="@dimen/text_button_size"
+                    android:textStyle="bold"
+                    local:typeface="arial_normal" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include
+        layout="@layout/indicator_progressbar_layout" />
+</FrameLayout>

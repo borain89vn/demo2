@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{84A942EC-EF2A-4026-AB3C-9FC7C70C2607}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CoreSystem</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Enum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\FileParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Http.Async.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Http.Sync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Http.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\HttpCookie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\HttpFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\HttpHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\HttpParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\HttpResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\IHttp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\IHttpFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\IHttpResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\IRestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\IRestRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\IRestResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Parameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestClient.Async.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestClient.Sync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestClientExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestRequestAsyncHandle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestResponseCookie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\SharedAssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\SimpleJson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\HttpBasicAuthenticator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\IAuthenticator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\NtlmAuthenticator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth1Authenticator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth2Authenticator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\SimpleAuthenticator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\HttpPostParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\HttpPostParameterType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthParameterHandling.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthSignatureMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthSignatureTreatment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthTools.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthWebQueryInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\OAuthWorkflow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\WebPair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\WebPairCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\WebParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\WebParameterCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\Extensions\CollectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\Extensions\OAuthExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\Extensions\StringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Authenticators\OAuth\Extensions\TimeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\Crc32.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\FlushType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\GZipStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\InfTree.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\Inflate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\ZLib.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\ZLibCodec.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\ZLibConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Compression\ZLib\ZLibStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Deserializers\DeserializeAsAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Deserializers\DotNetXmlDeserializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Deserializers\IDeserializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Deserializers\JsonDeserializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Deserializers\XmlAttributeDeserializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Deserializers\XmlDeserializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\MiscExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\ReflectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\ResponseExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\StringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\XmlExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\MonoHttp\Helpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\MonoHttp\HtmlEncoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Extensions\MonoHttp\HttpUtility.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Properties\AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Serializers\DotNetXmlSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Serializers\ISerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Serializers\JsonSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Serializers\SerializeAsAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Serializers\XmlSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Validation\Require.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\Validation\Validate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\libs\SQLite\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\dao\AbstractDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\dao\UserDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\database\Database.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\entity\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\entity\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\entityManager\EntityManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\service\HttpConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\service\TCHttpRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\utilitis\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\utilitis\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\model\entity\Profile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\SpecialistProfileInfos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\UserInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\BookingInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\service\TCServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\service\DataHelperRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\service\ParseDataHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\notification\TCNotificationCenter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\signalR\TCSignalRClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\BookingEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\BookingHistory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\FavoriteDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\DeferTalkNow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\DeferDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\MessageDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\BookingNumber.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\PhotoDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\InvoiceDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\ConfigDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\application\MApplication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\TalkNowDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\ResultDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\dto\SearchDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)src\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\utilitis\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\dto\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\application\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\notification\" />
+    <Folder Include="$(MSBuildThisFileDirectory)src\signalR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)src\.DS_Store" />
+    <None Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestSharp.Compact.csproj" />
+    <None Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\RestSharp.csproj" />
+    <None Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\packages.config" />
+    <None Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\T4Helper\T4Helper.tt" />
+    <None Include="$(MSBuildThisFileDirectory)src\libs\RestSharp\T4Helper\T4Toolbox.tt" />
+  </ItemGroup>
+</Project>

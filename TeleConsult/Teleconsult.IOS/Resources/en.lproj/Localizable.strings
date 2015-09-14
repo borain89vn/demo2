@@ -1,0 +1,267 @@
+﻿
+//home screen
+"TextTitleHome" = "Teleconsult";
+"TextTitleCustomerHome"  = "Home";
+"TextButtonLogin" = "Sign In";
+"TextButtonRegisterUser" = "Register as a user";
+"TextButtonJoinSpecialist" = "Join as a specialist";
+"TextPlaceholderSearch" = "Search for an expert";
+"LoadingHub" = "Loading Data...";
+
+//email component
+"TextTitleEmailProfile" = "Email profile";
+"TextPlaceholderEmailToSomeOne" = "Recipient's email";
+"TextPlaceholderEmailMessage" = "Add a personal message (optional)";
+"TextPlaceholderYourEmail" = "Your email";
+"TextLablePromptEmail" = "Separate multiple addresses with a comma (,).";
+"TextTitleButtonRegisterUser" = "Register to consult with an expert";
+
+//login screen
+"TextLableUsername" = "Username:";
+"TextLablePassword" = "Password:";
+"TextButtonForgetPass" = "Forgotten your password?";
+"TextButtonSignUp" = "Not registered yet sign up";
+"TextLableRemember" = "Remember me on this device";
+"LoginHub" = "Authenticating...";
+"TextMessageWarningBetaVersion" = "TeleConsult is currently in a Beta phase meaning some functionalities might be limited or not fully working as intended. Please visit our web site to learn more about TeleConsult.";
+
+//register screen
+"TextTitleRegisterUser" = "Create new account";
+"TextTitleRegisterSpecialist" = "Join as a specialist";
+"LoadingText" = "Loading...";
+
+//specialist profile screen
+"TextSpecialistProfile" = "Profile";
+"LoadingHub" = "Loading Data...";
+"SendingRequest" = "Sending Request...";
+"TitleDatePickerEndDate" = "End date"; 
+"TitleDatePickerEndTime" = "End time";
+"TitleDatePickerStartTime" = "Start time";
+"TitleDatePickerStartDate" = "Start date";
+"TextResultRemoveFavouriteSuccess" =  "{0} was removed from Favorite successfully.";
+"TextResultAddFavouriteSuccess" = "{0} was added to Favorite successfully.";
+"TextAllEmailSucess" = "The email has been sent successfully.";
+
+//booking screen
+"TextTitleDashboard" = "Dashboard";
+"TextTitleBooking" = "Booking";
+"StatusCancel" = "Cancel";
+"StatusConfirmed" = "Confirm scheduled time";
+"StatusFinish" = "Finish";
+"TextTitleDelay" = "Delayed Consultation";
+"TextSpecialistToReschedule" = "Waiting for expert to schedule";
+"TextCustomerToSchedule" = "Waiting for TeleConsult member response to schedule";
+"TextAwaitingBookingCustomer" = "Waiting for your confirmation";
+"TextAwaitingBookingSpecialist" = "Awaiting your confirmation";
+"TextMessageWhenTimeEnded" = "The requested time period for your TeleConsult has ended";
+
+//networking
+"TitleNetworkStatus" = "Network Connection";
+"TextNetworkFail" = "Network disconnected. Please check internet connection.";
+"TextConnectionFailed" = "Connection Failed.";
+
+//search specialist
+"TextTitleSearchResultSpecialist" = "SEARCH RESULT";
+"TextMinimumChargeExpert" = "Minimum charge: ${0}";
+"TextMinimumAndConnectionFeeExpert" = "Minimum charge: ${0} - Connection fee applicable: ${1}";
+"TextNoResultSpecialist" = "Your search did not match any TeleConsult profiles.";
+
+// my profile
+"TextTitleMyProfile" = "Profile";
+"TextLableOntime" = "{0}/{1} On-time";
+
+//message warning
+"TextAlertTitleBookingAlert" = "Alerts Booking";
+"TextAlertTitleBookingRequest" = "Requests Booking";
+"TextAlertTitleBookingComfirm" = "Comfirmed Booking";
+"TextAlertTitleBookingPast" = "Past Booking";
+
+"TextAlertActiveCode" = "Activate Account";
+"TextMessageWrongCode" = "Invalid activation code.";
+"TextMessageActiveSuccess" = "Your account is activated successfully.";
+"TextRequestSuccess" = "Your request has been sent successfully.";
+"TextRequestFail" = "Your request is not successful.";
+"TitleAlertNotice" = "Message";
+"TitleAlertUpload" = "Upload File";
+"TitleAlertFavorite" = "Favorite";
+"TitleAlertBookATime" = "Book A Time";
+"TitleAlertChangePassword" = "Change Password";
+"TitleAlertForgotPassword" = "Forgot Password";
+"TitleChangePasswordSuccess" = "Your password has been changed successfully.";
+"TitleAlertSendFeedback" = "Feedback";
+"TextMessageNeedRating" = "Please select a rating before submitting.";
+"TextMessageNotReceiveConfig" = "Could not retrieve data from Teleconsult.";
+"TextMessageRanOutDisk" = "Server is temporarily unavailable, please try later.";
+"TextMessageSendFeedbackSuccess" = "Your feedback has been sent successfully.";
+
+"TextAlertTitleRequiredUpdateProfile" = "Request for a consultation is declined";
+"TextMessageRequireUpdateProfile" = "Please complete your profile to request a consultation. Would you like to complete your profile now?";
+
+"WarningOldPasswordRequired" = "The Old Password field is required.";
+"WarningNewPasswordRequired" = "The New Password field is required.";
+"WarningConfirmPasswordRequired" = "The Confirm Password field is required.";
+"TextMessageMinimumStartTime" = "The earliest start time for the consultation must be at least {0} minutes from now.";
+"TextMessageMaximumStartTime" = "The latest start time for the consultation must be at most {0} minutes from now.";
+"TextMessageMinimumEndTime" = "The time window length cannot be less than {0} minutes.";
+"TextMessageMaximumEndTime" = "The time window length for a consultation cannot exceed {0} minutes.";
+
+"TextMessageConditionStartAndEndTime" = "The end time should be later than the start time.";
+
+"TextMessageErrorStandardHour" = "Invalid time period - please request a time period within the expert's standard hours.";
+"TextMessageErrorAnotherHour" = "Invalid time period - please request a time period outside the expert's standard hours.";
+
+"TextMessageUploadSuccess" = "Your file has been sent successfully.";
+
+"TextSoonestPossibleTime" = "Soonest possible time";
+"WarningLoginPasswordRequired" = "Your password is required to sign in.";
+"WarningLoginEmailRequired" = "Your email address or username is required to sign in.";
+"WarningConfirmPasswordRequired" = "The Confirm Password field is required.";
+"WarningInvalidPasswordFormat" =  "Password must be at least 7 characters long and contain at least one capitalized letter (A-Z) and one digit (0-9).";
+"WarningNewPasswordNotMatch" =  "Passwords do not match.";
+"WarningEmailRequired" = "Email Address is required.";
+"WarningYourEmailRequired" = "Please input Your email address.";
+"WarningInvalidEmail" = "Please enter a valid email address.";
+"WarningForgotPasswordSuccess" = "Please follow the instructions we sent to {0}";
+"TextTtilePromptForgotPassword" = "Instructions for resetting your password will be sent to your email address. If you cannot find this please check your email junk folder.";
+
+"TextAlertSignIn" = "Sign In";
+"BadLoginNetwork" = "Please check internet connection.";
+"BadLogin" = "Invalid email/username or password.";	
+"LoginPassworkInCorrect" = "Your password is incorrect. Please try again.";
+"LoginAccountLocked" = "Your account has been locked.";
+"TalknowFail" = "Request talk now failed";	
+"TalknowSuccess" = "Request talk now success";	
+"TextPlaceholderEnqiry" = "Brief description of needs (160 characters or less)";
+"TextPlaceholderFeedback" = "Feedback for this expert";
+"TextPlaceholderEmailProfile" = "Each email separate by ','";
+"TitleAlertInvalidEmails" = "Please amend recepient email address - incorrect email format";
+"TitleAlertEmail" = "Email";
+
+"TextLableStep1" = "Confirming consultation with your Expert - this may take a few moments";
+
+"TextAlertTitleTalknowConfirm" = "Talk Now Confirmation";
+"TextMessageConfirmTalknow1" = "You have requested to have a TeleConsult now with ";
+"TextMessageConfirmTalknow2" = " at a cost of ";
+"TextMessageConfirmTalknow3" = " per minute. Please note that a minimum charge of ";
+"TextMessageConfirmTalknow4" = " will be applied if the booking is confirmed and you later decide to cancel it.";
+
+"TextAlertTitleConfirmSoonest" = "Soonest Time Available Consultation Confirmation";
+"TextAlertTitleSoonestSuccess" = "Confirm consultation with Expert";
+
+"TextMessageConfirmSoonest1" = "You have requested a consultation as soon as possible with ";
+"TextMessageConfirmSoonest2" = ". The expert will come back to you with a time proposal and rate. Please note that a minimum charge of ";
+"TextMessageConfirmSoonest3" = " will be applied if the booking is confirmed and you later decide to cancel it.";
+
+"TextAlertTitleConfirmStandard" = "Book A Standard Time Confirmation";
+"TextAlertTitleConfirmOutOf" = "Book An Out Of Hour Confirmation";
+"TextAlertTitleConsultationSuccess" = "Confirm consultation with Expert";
+
+"TextMessageConfirmPreferred1" = "You have requested a consultation between ";
+"TextMessageConfirmPreferred2" = " and ";
+"TextMessageConfirmPreferred3" = " with ";
+"TextMessageConfirmPreferred4" = " at a cost of ";
+"TextMessageConfirmPreferred5" = " per minute. Please note that a minimum charge of ";
+"TextMessageConfirmPreferred6" = " will be applied if the booking is confirmed and you later decide to cancel it.";
+
+"TextConfrimPreferred" = "You have accepted a call back between {0} and {1}\n\nYou will be notified when the expert responds to your request.";
+
+"TextMessageASAPSuccess" = "You have accepted a call back as soon as possible.\r\rPlease have your phone available.\r\rYou will be reminded closer to the consultation time.";
+"TextPreferTimeSuccess1" = "You have accepted a call back ";
+"TextPreferTimeSuccess2" = " and ";
+"TextPreferTimeSuccess3" = ".\r\rYou will be notified when the expert responds to your request.";
+
+"TextMessageDefer1" = " has requested to defer your consultation by up to ";
+"TextMessageDefer2" = " . You may accept or cancel this new time, please note the consultation will be cancel if you don't reply within 1 min.";
+"TextLableUpdateDefer" = "You have accepted a call back between within {0}.";
+
+"TextMessageReschedule1" = " has requested to schedule a consultation to next ";
+"TextMessageReschedule2" = ". You may accept or cancel this new time, please note the consultation will be cancel if you don't reply within 1 min.";
+"TextLableUpdateReshedule" = "You have accepted a call back between within {0}.";
+
+"TextNoDataListFavorite" = "You have no favourite saved";
+
+"TextWarningWaivedFeeExpertView" = "You have waived fee for this consultation.";
+"TextWarningWaivedFeeCustomerView" = "You have been waived fee for this consultation.";
+"AlertTitleConsultationTalkNow" = "Consultation";
+"AlertMessageTalkRequestInConversation" = "You cannot make a another request for talk now because you are in a conversation with expert.";
+"AlertMessageTalkRequestBalanceNotEnough" = "You cannot request a talk now to this expert because your credit card could not be charged.";
+"AlertMessageTalkRequestBookingCanceled" = "This previously confirmed TeleConsult has been cancelled.";
+"AlertMessageTalkRequestCallServiceUnavailable" = "Conference service temporarily unavailable. Please try again soon."; 
+"TextMessageBeginConsultationSuccess" = "Dialing customer's number to begin consultation.";
+
+//alert view
+"OkTitle" = "OK";
+"YesTitle" = "Yes";
+"NoTitle" = "No";
+"CancelTitle" = "Cancel";
+"DeclineTitle" = "Decline";
+"DoneTitle" = "Done";
+"ConfirmTitle" = "Confirm";
+"AcceptTitle" = "Accept";
+"TitleAlert" = "Message";
+"TitleWarningEnquiry" = "Nature of enquiry";
+"TextMessageRequiredEnquiry" = "Please enter nature of enquiry.";
+"TitleEmailProfile" = "Send specialist's profile";
+"TitleConfirmTalknow" = "Confirmation";
+"TitleConfirm" = "Confirmation";
+"TitleDecline" = "Decline";
+"TitleSend" = "Send";
+"TitleFeedback" = "Feedback";
+
+//following up
+"UploadHub" = "Uploading image...";
+"SendEmailHub" = "Sending emails...";
+"SendparamuriteHub" = "Sendinparamquest...";
+"SendFeedbacklHub" = "Sending feedback...";
+"TextAlertMessageCustomerCancel1" = "You will be charged the minimum booking fee of "; 
+"TextAlertMessageCustomerCancel2" = " if you cancel this booking. Are you sure you want to cancel?";
+"TextAlertMessageSpecialistCancel1" = "The customer will not be charged the minimum booking fee of ";
+"TextAlertMessageSpecialistCancel2" = " if you cancel this booking. Are you sure you want to cancel?";
+"TextAlertMessageSpecialistCancelNotApplyMinCharge" = "Are you sure you want to cancel?";
+"TextAlertTitleCancellation" = "Confirm Cancellation";
+"TextAlertTitleTalkRequest" = "TalkNow Request";
+"TextAlertTitleAcceptDefer" = "Defer Acceptance";
+"TextAlertTitleCancelDefer" = "Defer Cancellation";
+"TextUpdateStep2" = "Dialled your number for consultation";
+"TextLableGST" = "GST applies: ";
+"TextLableNotGST" = "Did not Apply by GST";
+"TextTitleConsultationRef" = "Consultation Ref ";
+"TextMessageSignOut" = "Are you sure you want to sign out?";
+"TextTitleSignOut" = "Sign Out";
+"TextMessageForceLogout" = "Your session has expired due to another account signed in.";
+"TextTitleApplicableCostCustomer" = "APPLICABLE COST";
+"TextTitleApplicableCostSpecialist" = "CONSULTATION FEE";
+"TextMessageTalkReplayNotExists" = "Talk Replay does not exist.";
+"TextMessageInvoiceNotExists" = "Invoice does not exist.";
+
+"TextMessageEnterEmail" = "Please enter recepient's email address.";
+"TextAlertMessageConfirmWaiveFee" = "You will be NOT allowed to undo this action. Do you really want to waive your fee on this consultation?";
+"TextAlertTitleWaiveFee" = "Waive Fee Confirmation";
+"TextAlertTitleWaiveFeeExpire" = "Waive Fee";
+"TextMessageCanNotBeginConsultation" = "The confirmed time window has expired, the TeleConsult has been cancelled.";
+"TextMessageWaiveFeeTimeExpired" = "Sorry, the time for you to waive fee this TeleConsult is expired.";
+// Title Screen
+"TitleScreenSignIn" = "SIGN IN";
+"TitleScreenForgotPassword" = "FORGOT PASSWORD";
+"TitleScreenChangePassword" = "CHANGE PASSWORD";
+"TitleScreenActiveAccount" = "ACTIVATE ACCOUNT";
+"TitleScreenSearchSpecialist" = "SEARCH FOR AN EXPERT";
+"TitleScreenUpdateProfile" = "PROFILE MANAGEMENT";
+
+// Splash screen
+"TitleAlertCloseBalance" = "Consultation";
+"MessageAlertCloseBalance" = "Warning: Your balance is close to expiring. Please help to recharge your balance. Thank you!";
+"MessageAlertCloseBalanceCalling" = "Your balance limit is reached. The consultation will be ended in a few second.";
+
+// history action
+"TitleActionChooseAction" = "Please choose a action";
+"ActionWaiveFee" = "Waive Fee";
+"ActionViewInvoice" = "View Invoice";
+"ActionUploadFile" = "Upload File";
+"ActionTalkReplay" = "Talk Replay";
+"ActionOrderTranscript" = "Order Transcript";
+
+// delete file
+"TitleAlertDeleteFile" = "Delete File";
+"MessageAlertDeleteFile" = "You could not delete {0} file at the moment";
+"MessageAlertFileNoLonger" = "Uploaded file does not exist";

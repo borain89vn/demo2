@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >   
+	<item android:state_pressed="true" >
+		<shape>
+	        <gradient
+	            android:startColor="@color/button_past_history_press"
+	            android:endColor="@color/button_past_history_press"
+	            android:centerColor="@color/button_past_history_press"
+	            android:angle="270" />
+		    <solid
+		        android:color="@color/button_past_history_press" />
+		    <stroke
+		        android:width="0dp"
+		        android:color="#1B5E91" />
+		    <corners
+				android:radius="@dimen/corner"
+		        />          
+		</shape>  
+
+ 	</item>
+    <item>
+	    <shape>
+	        <gradient
+	            android:startColor="@color/button_past_history"
+	            android:endColor="@color/button_past_history"
+	            android:centerColor="@color/button_past_history"
+	            android:angle="270" />
+	        <stroke
+	            android:width="0dp"
+	            android:color="#1B5E91" />
+	        <corners
+				android:radius="@dimen/corner"
+		        />
+	    </shape>
+	</item>
+</selector>

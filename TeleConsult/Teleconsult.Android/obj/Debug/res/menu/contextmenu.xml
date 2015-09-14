@@ -1,0 +1,1 @@
+<menu android:id="@+id/contextMenu" android:background="@color/white" xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/add" android:title="New"></item><item android:id="@+id/refresh" android:title="Refresh" /></menu>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/pad_left"
+    android:background="@drawable/custom_border_listview_item">
+    <LinearLayout
+        android:id="@+id/llDashBoard"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/pad_right">
+        <TextView
+            android:text="22/12/1987"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_time_booking"
+            android:textColor="@color/black"
+            android:minWidth="100dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            local:typeface="arial_normal" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/pad_left">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <TextView
+                    android:text="@string/reference_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    local:typeface="arial_normal" />
+                <TextView
+                    android:text=" 1234"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_reference_booking"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/pad_left"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    local:typeface="arial_normal" />
+            <!--                <ImageView
+                    android:src="@drawable/info_ic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/img_info"
+                    android:layout_marginLeft="@dimen/pad_left"
+                    android:layout_marginRight="@dimen/pad_right" />-->
+            </LinearLayout>
+            <TextView
+                android:text="N/A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name_booking"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:singleLine="true"
+                local:typeface="arial_normal" />
+            <TextView
+                android:text="N/A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_created_date"
+                android:textColor="@color/grey_app"
+                local:typeface="arial_normal" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/llBgStatus"
+                android:background="@drawable/ic_status_blue"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/pad_top_home"
+                android:layout_marginRight="@dimen/pad_right">
+                <TextView
+                    android:text="Awaiting your confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_status_booking"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/pad_right"
+                    android:layout_marginLeft="@dimen/pad_left"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    local:typeface="arial_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/light_grey"
+        android:layout_marginTop="@dimen/pad_top_home" />
+</LinearLayout>

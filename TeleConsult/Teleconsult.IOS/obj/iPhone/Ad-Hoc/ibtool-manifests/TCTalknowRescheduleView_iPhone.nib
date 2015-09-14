@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.ibtool.document.errors</key>
+	<dict/>
+	<key>com.apple.ibtool.document.notices</key>
+	<dict/>
+	<key>com.apple.ibtool.document.warnings</key>
+	<dict>
+		<key>Bx1-mS-0Fc</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>Bx1-mS-0Fc</string>
+				</array>
+				<key>message</key>
+				<string>Automatic Preferred Max Layout Width is not available on iOS versions prior to 8.0</string>
+				<key>type</key>
+				<string>IBAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>fY5-wV-OfA</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>fY5-wV-OfA</string>
+				</array>
+				<key>message</key>
+				<string>Automatic Preferred Max Layout Width is not available on iOS versions prior to 8.0</string>
+				<key>type</key>
+				<string>IBAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>nao-kb-9lt</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>nao-kb-9lt</string>
+				</array>
+				<key>message</key>
+				<string>Automatic Preferred Max Layout Width is not available on iOS versions prior to 8.0</string>
+				<key>type</key>
+				<string>IBAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+		<key>uO4-Lp-lSK</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>uO4-Lp-lSK</string>
+				</array>
+				<key>message</key>
+				<string>Automatic Preferred Max Layout Width is not available on iOS versions prior to 8.0</string>
+				<key>type</key>
+				<string>IBAttributeUnavailable</string>
+				<key>type-value</key>
+				<integer>5</integer>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

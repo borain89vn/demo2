@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+    <include
+        layout="@layout/header_layout" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/pad_left_header"
+            android:layout_marginRight="@dimen/pad_left_header">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:layout_marginTop="@dimen/pad_top">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/avatar_past_detail"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/special_home"
+                        android:layout_marginRight="@dimen/pad_right" />
+                    <ImageView
+                        android:src="@drawable/ic_0_star"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_num_rating_pass"
+                        android:layout_marginTop="@dimen/pad_top_home" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_top">
+                    <TextView
+                        android:text="First last name "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:id="@+id/tv_name_past_detail"
+                        android:textSize="@dimen/text_content_dashboard_size"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        local:typeface="arial_normal" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail">
+                        <ImageView
+                            android:src="@drawable/ic_favorite_unselect"
+                            android:layout_width="@dimen/wh_ic_menu"
+                            android:layout_height="@dimen/wh_ic_menu"
+                            android:id="@+id/img_add_favorite_pass" />
+                        <ImageView
+                            android:src="@drawable/ic_emailprofile"
+                            android:layout_width="@dimen/wh_ic_menu"
+                            android:layout_height="@dimen/wh_ic_menu"
+                            android:id="@+id/img_email_profile_pass"
+                            android:layout_marginLeft="@dimen/text_pad_left_landing" />
+                        <ImageView
+                            android:src="@drawable/icon_feedback"
+                            android:layout_width="@dimen/wh_ic_menu"
+                            android:layout_height="@dimen/wh_ic_menu"
+                            android:id="@+id/img_rating_pass"
+                            android:layout_marginLeft="@dimen/text_pad_left_landing" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <include
+                layout="@layout/step_waiting_call" />
+            <LinearLayout
+                android:id="@+id/llContentPass"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/booking_actions_layout" />
+                <TextView
+                    android:text="TIME IN CONSULTATION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_content_dashboard_size"
+                    android:layout_marginTop="@dimen/pad_top"
+                    local:typeface="arial_normal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"
+                    android:layout_marginTop="@dimen/pad_top_home" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top_home">
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_start_date_past"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_start_time_past"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        local:typeface="arial_normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top_home">
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_end_date_past"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_end_time_past"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        local:typeface="arial_normal" />
+                </LinearLayout>
+                <TextView
+                    android:text="TIME DURATION"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_content_dashboard_size"
+                    android:layout_marginTop="@dimen/pad_top"
+                    local:typeface="arial_normal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"
+                    android:layout_marginTop="@dimen/pad_top_home" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top_home">
+                    <TextView
+                        android:text="Total time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        android:layout_weight="1"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_total_time_past"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        local:typeface="arial_normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llGroupFeePass"
+                    android:layout_marginTop="@dimen/pad_top">
+                    <TextView
+                        android:text="CONSULTATION FEE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/green_sky_landing"
+                        android:textSize="@dimen/text_content_dashboard_size"
+                        local:typeface="arial_normal" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"
+                        android:layout_marginTop="@dimen/pad_top_home" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:text="Total fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_content_size_pass"
+                            android:layout_weight="1"
+                            local:typeface="arial_normal" />
+                        <TextView
+                            android:text="$0.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_total_fee_past"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            android:textSize="@dimen/tv_content_size_pass"
+                            local:typeface="arial_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:text="@string/expert_waived_fee_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_notice_waived_pass"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="@dimen/pad_top_home"
+                    local:typeface="arial_normal"
+                    android:textStyle="italic" />
+                <TextView
+                    android:text="APPLICABLE COST"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_content_dashboard_size"
+                    android:layout_marginTop="@dimen/pad_top"
+                    local:typeface="arial_normal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"
+                    android:layout_marginTop="@dimen/pad_top_home" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top_home">
+                    <TextView
+                        android:text="Total cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        android:layout_weight="1"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="$0.00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_total_cost_past"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_content_size_pass"
+                        local:typeface="arial_normal" />
+                </LinearLayout>
+                <TextView
+                    android:text="ATTACHMENT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green_sky_landing"
+                    android:textSize="@dimen/text_content_dashboard_size"
+                    android:layout_marginTop="@dimen/pad_top"
+                    local:typeface="arial_normal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"
+                    android:layout_marginTop="@dimen/pad_top_home" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llFileAtachment"
+                    android:layout_marginTop="@dimen/pad_top_home"
+                    android:layout_marginBottom="@dimen/pad_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

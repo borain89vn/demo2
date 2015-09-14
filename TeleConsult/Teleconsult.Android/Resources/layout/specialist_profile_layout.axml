@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            layout="@layout/header_layout" />
+        <ScrollView xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/pad_left_header"
+                android:layout_marginLeft="@dimen/pad_left_header">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pad_top">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="@dimen/pad_right">
+                        <ImageView
+                            android:id="@+id/img_avatar_spec_detail"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <ImageView
+                            android:src="@drawable/ic_0_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/img_ic_rating_detail"
+                            android:layout_marginTop="@dimen/pad_top_home" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_pad_left_landing">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:src="@drawable/ic_unlicensed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ic_license_status_detail" />
+                            <TextView
+                                android:text="Unlicensed (not required)"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_licence_status_detail"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue_landing"
+                                android:layout_marginLeft="@dimen/pad_left"
+                                android:textSize="13dp"
+                                android:singleLine="true"
+                                local:typeface="arial_normal" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/pad_top_home">
+                            <ImageView
+                                android:src="@drawable/ic_location"
+                                android:layout_width="@dimen/wh_ic_landing"
+                                android:layout_height="@dimen/wh_ic_landing"
+                                android:layout_gravity="bottom" />
+                            <TextView
+                                android:text="10 km"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_km_spec_detail"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue_landing"
+                                android:textSize="13dp"
+                                local:typeface="arial_normal" />
+                            <ImageView
+                                android:src="@drawable/ic_booktime"
+                                android:layout_width="@dimen/wh_ic_landing"
+                                android:layout_height="@dimen/wh_ic_landing"
+                                android:layout_marginLeft="@dimen/pad_left" />
+                            <TextView
+                                android:text="Available now"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_status_spec_detail"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue_landing"
+                                android:layout_marginLeft="@dimen/pad_left"
+                                android:textSize="13dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                local:typeface="arial_normal" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/pad_top_home">
+                            <ImageView
+                                android:src="@drawable/ic_ontime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageView1" />
+                            <TextView
+                                android:text="20/20 On-time consultations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_ontime_detail"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue_landing"
+                                android:layout_marginLeft="@dimen/pad_left"
+                                android:textSize="13dp"
+                                android:singleLine="true"
+                                local:typeface="arial_normal" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/pad_top">
+                            <ImageView
+                                android:src="@drawable/ic_favorite_unselect"
+                                android:layout_width="@dimen/wh_ic_menu"
+                                android:layout_height="@dimen/wh_ic_menu"
+                                android:id="@+id/img_add_favorite_detail" />
+                            <ImageView
+                                android:src="@drawable/ic_emailprofile"
+                                android:layout_width="@dimen/wh_ic_menu"
+                                android:layout_height="@dimen/wh_ic_menu"
+                                android:id="@+id/img_email_profile_detail"
+                                android:layout_marginLeft="@dimen/text_pad_left_landing" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <include
+                    layout="@layout/step_waiting_call" />
+                <include
+                    layout="@layout/booking_actions_layout" />
+                <TextView
+                    android:id="@+id/tvStar8"
+                    android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginBottom="-16dp"
+                    android:textColor="@color/blue_landing"
+                    android:textSize="18dp"
+                    local:typeface="arial_normal" />
+                <LinearLayout
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/pad_right"
+                    android:paddingLeft="@dimen/pad_left"
+                    android:id="@+id/ll_spec_detail">
+                    <TextView
+                        android:id="@+id/tv_min_charge_specialist_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minimum charge: $15.99 - Connection fee applicable: $4.99"
+                        android:textColor="@color/blue_landing"
+                        android:textSize="11dp"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="@string/profession_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_profession_spec_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="@string/Specialisation_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="N/A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_specialisation_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="@string/gst_applied_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_gst_spec_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="@string/short_description_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="This is detail about specialist "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_short_description_spec_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="@string/standard_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/pad_top_home">
+                        <TextView
+                            android:text="Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tvDayStandards"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            local:typeface="arial_normal" />
+                        <TextView
+                            android:text="Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tvStartTimeStandard"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            android:layout_marginLeft="@dimen/pad_left"
+                            local:typeface="arial_normal" />
+                        <TextView
+                            android:text="Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tvEndTimeStandard"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            android:layout_marginLeft="@dimen/pad_left"
+                            local:typeface="arial_normal" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="@string/detail_biography_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="This is detail about specialist "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_long_description_spec_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="@string/qualification_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="This is detail about specialist "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_qualifications_spec_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="@string/language_spoken_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_sky_landing"
+                        android:layout_marginTop="@dimen/pad_top_tv_in_spec_detail"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        local:typeface="arial_normal" />
+                    <TextView
+                        android:text="This is detail about specialist "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_language_spoken_spec_detail"
+                        android:layout_marginTop="@dimen/pad_top_home"
+                        android:layout_marginBottom="@dimen/pad_bottom"
+                        android:textColor="@color/black"
+                        local:typeface="arial_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include
+        layout="@layout/indicator_progressbar_layout" />
+</FrameLayout>

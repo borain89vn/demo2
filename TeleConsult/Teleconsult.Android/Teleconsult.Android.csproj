@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{FBF1AA3D-5E77-44F1-A603-73A426C9107C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Teleconsult.Android</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Teleconsult.Android</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AndroidSigningKeyStore>G:\keyStoreTELE\TeleConsultKeyStore.store</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>123x@X</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>ftpkey</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>123x@X</AndroidSigningKeyPass>
+    <AndroidKeyStore>True</AndroidKeyStore>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\Components\signalr-2.1.2\lib\android\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Macaw.UIComponents">
+      <HintPath>..\Components\MultiImageView-1.1\lib\android\Macaw.UIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11.1\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Export" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="src\com\teleconsult\ui\HomeActivity.cs" />
+    <Compile Include="src\com\teleconsult\ui\SearchResultAdpater.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\BookingRequestsActivity.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\UserDashBoardMain.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\ConfirmedRequestsActivity.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\UserDashBoardListApdater.cs" />
+    <Compile Include="src\com\teleconsult\ui\SpecialistDetailActivity.cs" />
+    <Compile Include="src\com\teleconsult\ui\SearchResultActivity.cs" />
+    <Compile Include="src\com\teleconsult\utilsAndroid\constants.cs" />
+    <Compile Include="src\com\teleconsult\ui\LoginActivity.cs" />
+    <Compile Include="src\com\teleconsult\ui\BaseActivity.cs" />
+    <Compile Include="src\com\teleconsult\ui\CallingDurationActivity.cs" />
+    <Compile Include="src\com\teleconsult\ui\Background.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\AlertActivity.cs" />
+    <Compile Include="src\com\teleconsult\entity\TextViewWriter.cs" />
+    <Compile Include="src\com\teleconsult\ui\SpecialisationView.cs" />
+    <Compile Include="src\com\teleconsult\ui\ViewImageURL.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\PastBookingActivity.cs" />
+    <Compile Include="src\com\teleconsult\utilsAndroid\utilsAndroid.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\EventsAdapter.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\DownloaderAsyncTask.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\ExtensionMethods.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\Hashset.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\LRUCache.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\SoftReference.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\SoftReferenceHashTable.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\UrlImageCache.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\UrlImageViewCallback.cs" />
+    <Compile Include="libs\MonoDroid.UrlImageViewHelper-master\UrlImageViewHelper.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\RequestDetail.cs" />
+    <Compile Include="src\com\teleconsult\entity\OnCancelDialogListener.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\ConfirmDetail.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\PastHistoryDetail.cs" />
+    <Compile Include="src\com\teleconsult\ui\BookPreTimeActivity.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\HomeDashBoard.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\MyProfileActivity.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\ListFavoriteActivity.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\ChangePasswordActivity.cs" />
+    <Compile Include="src\com\teleconsult\ui\ResetPassword.cs" />
+    <Compile Include="src\com\teleconsult\tabUserDashBoard\AlertDetail.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\SendEmailUI.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\OnActionDelegate.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\TalkNowUI.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\BookASAPUI.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\BookPreTimeUI.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\RatingFeedbackUI.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\FavoriteUI.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\UploadPhoto.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetSpecialistProfile.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\UpdateBookingStatus.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetListFavorites.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\DeferTalkNowUI.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetBookingInfo.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\PopupNoticeInfomation.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\PopUpConfirm.cs" />
+    <Compile Include="src\com\teleconsult\ui\SplashScreen.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\LoginRequest.cs" />
+    <Compile Include="src\com\teleconsult\ui\RegistryWebView.cs" />
+    <Compile Include="src\com\teleconsult\networkManager\NetworkStatusMonitor.cs" />
+    <Compile Include="src\com\teleconsult\ui\ActivateCode.cs" />
+    <Compile Include="src\com\teleconsult\entity\MyLocationManager.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetNumberBooking.cs" />
+    <Compile Include="src\com\teleconsult\ui\ViewWebInvoice.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetInvoiceRequest.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetSystemConfig.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\WaiveFeeRequest.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\TranscribeRequest.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\LogoutRequest.cs" />
+    <Compile Include="src\com\teleconsult\ui\PlayAudioManager.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\DeleteAlertRequest.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\GetStatusCurrentUser.cs" />
+    <Compile Include="src\com\teleconsult\entity\TextFactoryManager.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\RatingFeedbackReview.cs" />
+    <Compile Include="src\com\teleconsult\ui\SortAdapter.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\SortPopup.cs" />
+    <Compile Include="src\com\teleconsult\entity\OnAddFileToView.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\DeleteFile.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\ChangeStatusPopup.cs" />
+    <Compile Include="src\com\teleconsult\ui\StatusAdapter.cs" />
+    <Compile Include="src\com\teleconsult\apiRequest\ChangeStatusExpert.cs" />
+    <Compile Include="src\com\teleconsult\dialogUI\PopupBetaNotice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="libs\MonoDroid.UrlImageViewHelper-master\.gitignore" />
+    <None Include="libs\MonoDroid.UrlImageViewHelper-master\MonoDroid.UrlImageViewHelper.csproj" />
+    <None Include="libs\MonoDroid.UrlImageViewHelper-master\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\dimen.xml" />
+    <AndroidResource Include="Resources\layout\home_layout.axml" />
+    <AndroidResource Include="Resources\layout\sign_in_layout.axml" />
+    <AndroidResource Include="Resources\layout\search_list_adapter.axml" />
+    <AndroidResource Include="Resources\layout\search_layout.axml" />
+    <AndroidResource Include="Resources\layout\popup_request_layout.axml" />
+    <AndroidResource Include="Resources\layout\popup_confirm_layout.axml" />
+    <AndroidResource Include="Resources\layout\popup_notice_layout.axml" />
+    <AndroidResource Include="Resources\layout\book_a_time_schedule.axml" />
+    <AndroidResource Include="Resources\layout\popup_date_time_picker.axml" />
+    <AndroidResource Include="Resources\layout\customer_calling_layout.axml" />
+    <AndroidResource Include="Resources\layout\user_dashboard_layout.axml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_alerts.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_bookingrequests.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_confirmedbookings.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_pasthistory.xml" />
+    <AndroidResource Include="Resources\layout\user_dashboard_list_adapter.axml" />
+    <AndroidResource Include="Resources\layout\user_dashboard_list_result.axml" />
+    <AndroidResource Include="Resources\layout\popup_confirm_bookings.axml" />
+    <AndroidResource Include="Resources\layout\popup_reschedule_booking.axml" />
+    <AndroidResource Include="Resources\drawable\custom_border_bottom_left_right.xml" />
+    <AndroidResource Include="Resources\drawable\custom_border_corner_top_left_right.xml" />
+    <AndroidResource Include="Resources\drawable\custom_border_normal.xml" />
+    <AndroidResource Include="Resources\drawable\selector_button.xml" />
+    <AndroidResource Include="Resources\anim\bottom_in.xml" />
+    <AndroidResource Include="Resources\anim\bottom_out.xml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\layout\specialist_profile_layout.axml" />
+    <AndroidResource Include="Resources\layout\popup_enter_email.axml" />
+    <AndroidResource Include="Resources\layout\popup_rating_feedback.axml" />
+    <AndroidResource Include="Resources\layout\header_layout.axml" />
+    <AndroidResource Include="Resources\layout\view_list_image_url_layout.axml" />
+    <AndroidResource Include="Resources\layout\footer_loading_more.axml" />
+    <AndroidResource Include="Resources\drawable\custom_border_right.xml" />
+    <AndroidResource Include="Resources\drawable\custom_border_select.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_landing_page.png" />
+    <AndroidResource Include="Resources\drawable\custom_border_menu.xml" />
+    <AndroidResource Include="Resources\drawable\custom_border_line_top.xml" />
+    <AndroidResource Include="Resources\drawable\custom_button_no_border.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_alert_selected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_alert_unselected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_booking_request_selected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_booking_request_unselected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_confirmed_booking_selected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_confirmed_booking_unselected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_history_selected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_history_unselected.png" />
+    <AndroidResource Include="Resources\layout\tab_dashboard.axml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_custom_text.xml" />
+    <AndroidResource Include="Resources\values\CustomStyle.xml" />
+    <AndroidResource Include="Resources\menu\contextmenu.xml" />
+    <AndroidResource Include="Resources\menu\menu_search_result.xml" />
+    <AndroidResource Include="Resources\drawable\selectable_background_actionbar.xml" />
+    <AndroidResource Include="Resources\layout\custom_action_bar_layout.axml" />
+    <AndroidResource Include="Resources\menu\menu_dashboard.xml" />
+    <AndroidResource Include="Resources\layout\popup_priority_sort.axml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_blue_btn.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_dark_blue_btn.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_gray_btn.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_booktime.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_check.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_check_inactive.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_close_large.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_dollar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_dollar_cost.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_dropdown.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_emailprofile.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_selected.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_unselect.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_location.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_password.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_profile_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_profile_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_question.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_replay.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_status_blue.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_status_red.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_user.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\info_ic.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\special_home.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_home.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_search.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_listfavorite.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_my_profile.xml" />
+    <AndroidResource Include="Resources\layout\home_dashboard.axml" />
+    <AndroidResource Include="Resources\layout\my_profile.axml" />
+    <AndroidResource Include="Resources\layout\change_password.axml" />
+    <AndroidResource Include="Resources\layout\pastbooking_detail.axml" />
+    <AndroidResource Include="Resources\drawable\custom_button_pasthistory.xml" />
+    <AndroidResource Include="Resources\menu\menu_past_history.xml" />
+    <AndroidResource Include="Resources\layout\reset_password_layout.axml" />
+    <AndroidResource Include="Resources\color\custom_color_tv_forgot_pass.xml" />
+    <AndroidResource Include="Resources\drawable\custom_splash_center.xml" />
+    <AndroidResource Include="Resources\layout\registry_webview_layout.axml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_0_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_1_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_2_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_3_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_4_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_star_disable.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_feedback.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_uploadfile.png" />
+    <AndroidResource Include="Resources\layout\active_code_layout.axml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_app.png" />
+    <AndroidResource Include="Resources\drawable\custom_padding_logo_actionbar.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable\custom_border_edittext.xml" />
+    <AndroidResource Include="Resources\layout\popup_option_select_photo.axml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\camera.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_waive.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_transcribe.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\camera_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_emailprofile_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_enquiry.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_replay_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_transcribe_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_waive_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_feedback_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\info_ic_pressed.png" />
+    <AndroidResource Include="Resources\drawable\custom_icon_left.xml" />
+    <AndroidResource Include="Resources\drawable\custom_progress_bar.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_rating_disable.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_transcribe_disable.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_waive_disable.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_filter.png" />
+    <AndroidResource Include="Resources\layout\play_audio_layout.axml" />
+    <AndroidResource Include="Resources\drawable\custom_border_search_bar.xml" />
+    <AndroidResource Include="Resources\drawable\custom_btn_white.xml" />
+    <AndroidResource Include="Resources\layout\step_waiting_call.axml" />
+    <AndroidResource Include="Resources\drawable\custom_border_listview_item.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_blue_btn.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_dark_blue_btn.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_gray_btn.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_landing_page.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\camera.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\camera_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_0_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_1_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_2_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_3_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_4_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_app.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_booktime.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_check.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_check_box.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_check_inactive.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_close_large.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_close_search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_dollar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_dollar_cost.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_dropdown.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_emailprofile.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_emailprofile_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_enquiry.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_unselect.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_filter.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_location.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_password.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_profile_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_profile_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_question.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_rating_disable.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_replay.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_replay_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_selected_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_top.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_unselect_tabbar.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_star_disable.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_status_blue.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_status_red.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_transcribe.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_transcribe_disable.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_transcribe_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_uncheck_box.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_user.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_waive.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_waive_disable.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_waive_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_feedback.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_feedback_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_uploadfile.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\info_ic.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\info_ic_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo_popup.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\special_home.png" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_expired.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_unlicensed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_unverified.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_verified.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_expired.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_unlicensed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_unverified.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_verified.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_ontime.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_ontime.png" />
+    <AndroidResource Include="Resources\layout\popup_feedback_review.axml" />
+    <AndroidResource Include="Resources\layout\indicator_progressbar_layout.axml" />
+    <AndroidResource Include="Resources\layout\sort_adapter_layout.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_check_sort.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_check_sort.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_attach.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_attach.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable\custom_ll_control_segmented.xml" />
+    <AndroidResource Include="Resources\drawable\custom_button_segmented_left.xml" />
+    <AndroidResource Include="Resources\drawable\custom_button_segmented_right.xml" />
+    <AndroidResource Include="Resources\drawable\ic_selected_actionbar.9.png" />
+    <AndroidResource Include="Resources\drawable\custom_bg_status.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_available.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_maybe_available.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_not_available.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_available.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_maybe_available.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_not_available.png" />
+    <AndroidResource Include="Resources\layout\booking_actions_layout.axml" />
+  </ItemGroup>
+  <Import Project="..\CoreSystem\CoreSystem.projitems" Label="Shared" Condition="Exists('..\CoreSystem\CoreSystem.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="..\CoreSystem\src\" />
+    <Folder Include="src\" />
+    <Folder Include="src\com\" />
+    <Folder Include="src\com\teleconsult\" />
+    <Folder Include="src\com\teleconsult\ui\" />
+    <Folder Include="src\com\teleconsult\entity\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="src\com\teleconsult\tabUserDashBoard\" />
+    <Folder Include="src\com\teleconsult\utilsAndroid\" />
+    <Folder Include="libs\" />
+    <Folder Include="libs\MonoDroid.UrlImageViewHelper-master\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="src\com\teleconsult\dialogUI\" />
+    <Folder Include="Resources\color\" />
+    <Folder Include="src\com\teleconsult\apiRequest\" />
+    <Folder Include="src\com\teleconsult\networkManager\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Assets\fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="signalr">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>2.1.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="MultiImageView">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>1.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\arial.ttf" />
+  </ItemGroup>
+</Project>

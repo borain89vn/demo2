@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            layout="@layout/header_layout" />
+        <TextView
+            android:text="@string/book_time_tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_book_time_title"
+            android:gravity="left"
+            android:textColor="@color/green_sky_landing"
+            android:layout_marginTop="@dimen/pad_top"
+            android:textSize="16.5dp"
+            android:layout_marginLeft="@dimen/pad_left_header"
+            android:layout_marginRight="@dimen/pad_left_header"
+            local:typeface="arial_normal" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginLeft="@dimen/pad_left_header"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="@dimen/pad_left_header">
+            <TextView
+                android:text="Text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_day_standardhours_select"
+                android:textColor="@color/black"
+                android:gravity="right"
+                local:typeface="arial_normal" />
+            <TextView
+                android:text="Text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_start_standardhours_select"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/pad_left"
+                local:typeface="arial_normal" />
+            <TextView
+                android:text="Text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_end_standardhours_select"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/pad_left"
+                local:typeface="arial_normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_top"
+            android:layout_marginRight="@dimen/pad_left_header"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pad_left_header">
+            <TextView
+                android:text="Start: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/green_sky_landing"
+                android:minWidth="50dp"
+                android:textSize="@dimen/text_button_dashboard_size"
+                local:typeface="arial_normal" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:id="@+id/llStartTimeBooking"
+                android:background="@drawable/custom_border_listview_item">
+                <TextView
+                    android:text="Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_book_time_start"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/pad_right"
+                    android:layout_marginLeft="@dimen/pad_top"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/tv_content_size_pass"
+                    local:typeface="arial_normal" />
+                <ImageView
+                    android:src="@drawable/ic_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/pad_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_top"
+            android:layout_marginRight="@dimen/pad_left_header"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pad_left_header">
+            <TextView
+                android:text="End: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/green_sky_landing"
+                android:minWidth="50dp"
+                android:textSize="@dimen/text_button_dashboard_size"
+                local:typeface="arial_normal" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:id="@+id/llEndTimeBooking"
+                android:background="@drawable/custom_border_listview_item">
+                <TextView
+                    android:text="Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_book_time_end"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/pad_right"
+                    android:layout_marginLeft="@dimen/pad_top"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_button_dashboard_size"
+                    local:typeface="arial_normal" />
+                <ImageView
+                    android:src="@drawable/ic_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView1"
+                    android:layout_marginRight="@dimen/pad_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="error..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_time_booking_error"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/pad_top_home"
+            android:visibility="gone"
+            local:typeface="arial_normal" />
+        <Button
+            android:text="@string/book_time_request"
+            android:id="@+id/btn_book_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_border_select"
+            android:layout_marginTop="@dimen/pad_top_signin_lading"
+            android:layout_marginRight="@dimen/pad_left_header"
+            android:layout_marginLeft="@dimen/pad_left_header"
+            android:textSize="@dimen/text_button_size"
+            android:textStyle="bold"
+            local:typeface="arial_normal" />
+    </LinearLayout>
+    <include
+        layout="@layout/indicator_progressbar_layout" />
+</FrameLayout>

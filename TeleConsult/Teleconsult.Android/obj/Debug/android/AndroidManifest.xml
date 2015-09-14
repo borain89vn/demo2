@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.2" package="expert.teleconsult.mobile" android:versionCode="3">
+  <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
+  <application android:label="TeleConsult" anoiLaunchMode="SingleTop" android:icon="@drawable/ic_app" android:name="mono.android.app.Application" android:debuggable="true">
+    <service android:name="com.twilio.client.TwilioClientService" android:exported="false" />
+    <activity android:label="Home" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.HomeActivity" />
+    <activity android:label="BookingRequestsActivity" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.BookingRequestsActivity" />
+    <activity android:label="DashBoard" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.UserDashBoardMain" />
+    <activity android:label="ConfirmedRequestsActivity" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ConfirmedRequestsActivity" />
+    <activity android:label="SpecialistDetail" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.SpecialistDetailActivity" />
+    <activity android:label="Search_Result_Activity" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.SearchResultActivity" />
+    <activity android:label="LogIn" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.LoginActivity" />
+    <activity android:label="CallDuration" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.CallingDurationActivity" />
+    <activity android:label="AlertActivity" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.AlertActivity" />
+    <activity android:label="ViewImageURL" android:screenOrientation="portrait" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ViewImageURL" />
+    <activity android:label="PastBookingActivity" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.PastBookingActivity" />
+    <activity android:label="RequestDetail" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.RequestDetail" />
+    <activity android:label="ConfirmDetail" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ConfirmDetail" />
+    <activity android:label="PastDetail" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.PastHistoryDetail" />
+    <activity android:label="BookTime" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.BookPreTimeActivity" />
+    <activity android:label="HomeDashBoard" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.HomeDashBoard" />
+    <activity android:label="MyProfile" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.MyProfileActivity" />
+    <activity android:label="ListFavoriteActivity" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ListFavoriteActivity" />
+    <activity android:label="ChangePasswordActivity" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ChangePasswordActivity" />
+    <activity android:label="ResetPass" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ResetPassword" />
+    <activity android:label="AlertDetail" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.AlertDetail" />
+    <activity android:label="MyLocationManager" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.MyLocationManager" />
+    <activity android:label="TeleConsult" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.SplashScreen" />
+    <activity android:label="RegistryWebView" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.RegistryWebView" />
+    <activity android:label="ActivateCode" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ActivateCode" />
+    <activity android:label="Invoice" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.ViewWebInvoice" />
+    <activity android:label="PlayAudioManager" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme" android:name="md54fbb8a71d5749e6ceb5f9e333a9ca9dd.PlayAudioManager" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="expert.teleconsult.mobile.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.expert.teleconsult.mobile" />
+      </intent-filter>
+    </receiver>
+    <activity android:label="TeleConsult" android:screenOrientation="portrait" android:theme="@style/Mono.Android.Theme.Splash" android:name="expert.teleconsult.mobile.TrialSplashScreen" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>

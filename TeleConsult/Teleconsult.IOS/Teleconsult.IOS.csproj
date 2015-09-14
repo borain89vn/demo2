@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A48A45A7-9D3D-43B7-9F6E-769E50CAE4E9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Teleconsult.IOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TeleconsultIOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Distribution: TeleConsult Pty Ltd (26LQT343CA)</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>d0807e32-2c22-493c-9ff8-1dd625bf62ae</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution: TeleConsult Pty Ltd (26LQT343CA)</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>Teleconsult_21012015</IpaPackageName>
+    <CodesignProvision>d0807e32-2c22-493c-9ff8-1dd625bf62ae</CodesignProvision>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignKey>iPhone Distribution: TMA Solutions Canada Ltd</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignProvision>58e32951-b399-413d-ab79-92cf36b0a02b</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>d0807e32-2c22-493c-9ff8-1dd625bf62ae</CodesignProvision>
+    <CodesignKey>iPhone Distribution: TeleConsult Pty Ltd (26LQT343CA)</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\signalr-2.1.2\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Json" />
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\Components\signalr-2.1.2\lib\ios-unified\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\Components\signalr-2.1.2\lib\ios-unified\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\Components\signalr-2.1.2\lib\ios-unified\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\logout_icon.imageset\logoutIcon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\home_background.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\email_profile_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\favourite_selected_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\favourite_unselected_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\email_profile_icon.imageset\icon-emailprofile.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\favourite_selected_icon.imageset\icon-favorite-selected.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\favourite_unselected_icon.imageset\icon-favorite-unselect.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\back_navigationbar_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_pass_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_user_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_pass_icon.imageset\Password_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_user_icon.imageset\User_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_check.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_uncheck.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_uncheck.imageset\check_box_uncheck_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\login\login_check.imageset\check_box_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_confirmed_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\favorite_tabbar_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\favorite_tabbar_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\home_tabbar_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\home_tabbar_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\profile_tabbar_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\profile_tabbar_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\search_tabbar_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\search_tabbar_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_alert_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_alert_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_request_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_request_unselect_icon.imageset\Book_request_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_past_unselect_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_past_unselect_icon.imageset\past_booking_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_past_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_request_select_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_search_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_search_icon.imageset\search.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\home_tabbar_select_icon.imageset\Dashboard_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\home_tabbar_unselect_icon.imageset\Dashboard_inactive_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\favorite_tabbar_select_icon.imageset\favorite_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\favorite_tabbar_unselect_icon.imageset\favorite_inactive_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\search_tabbar_unselect_icon.imageset\Search_inactive%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\profile_tabbar_select_icon.imageset\human_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\profile_tabbar_unselect_icon.imageset\human_inactive%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_alert_select_icon.imageset\Alerts_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_alert_unselect_icon.imageset\Alerts_inactive_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_confirmed_unselect_icon.imageset\Confirmed_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_past_select_icon.imageset\pass_booking_active_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_request_select_icon.imageset\Book_request_active_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\search_navigationbar_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\search_tabbar_select_icon.imageset\Search_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_confirmed_active_icon.imageset\Confirmed_active_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\booking_confirmed_active_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\info_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\info_icon.imageset\note_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\enable_background.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\disable_background.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\4star_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\book_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\distance_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\rate_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\rate_icon.imageset\icon_dollar.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\search_filter_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\sort_check_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\sort_check_icon.imageset\check_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\distance_icon.imageset\Pin_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\book_icon.imageset\Book_time_icon_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\2star_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\3star_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\0star_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\1star_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\star_active.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\star_inactive.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\drop_down_blue.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\drop_down_red.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\drop_down_blue.imageset\drop_down_arrow_blue_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\drop_down_red.imageset\drop_down_arrow_red_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\step_check_active.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\step_check_inactive.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\step_check_active.imageset\step_check_active_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\step_check_inactive.imageset\step_check_inactive_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\cancel_background.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\cancel_background.imageset\Cancel_btn_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_email.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_favorite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_feedback.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_replay_talk.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_upload_file.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_email.imageset\Email_profile_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_favorite.imageset\Favorite_small_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_feedback.imageset\Feed_back_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_replay_talk.imageset\Replay_talk_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_upload_file.imageset\Upload_file.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\feedback_history_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\feedback_history_icon.imageset\Feedback_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\history_waive_fee_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\history_waive_fee_icon.imageset\Waive_fee_%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\0star_icon.imageset\0star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\1star_icon.imageset\1star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\2star_icon.imageset\2star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\3star_icon.imageset\3star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\4star_icon.imageset\4star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\star_active.imageset\enable_star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\star_inactive.imageset\disable_star.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\search_icon_home.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\search_icon_home.imageset\icon_search_landingpage.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\box_enquiry.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\box_enquiry.imageset\box_enquiry%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon60x60%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon60x60%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\title_logo.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\title_logo.imageset\logo-teleconsult%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\disable_background.imageset\button-disable%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\enable_background.imageset\button-enable%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\select_background.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\select_background.imageset\button-selected%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\search_navigationbar_icon.imageset\icon_search_dashboard%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\back_navigationbar_icon.imageset\icon-back%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\icon_enquiry.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\icon_enquiry.imageset\icon_enquiry%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_email.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_favorite.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_feedback.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_replay.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_transcribe.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_upload.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_waiveFee.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_email.imageset\icon_email%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_favorite.imageset\icon_favorite%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_replay.imageset\icon_replay%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_transcribe.imageset\icon_transcript%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_waiveFee.imageset\icon_waivefee%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_upload.imageset\icon_attachment%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_feedback.imageset\icon_star%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_favorite_active.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_favorite_active.imageset\icon_favorited%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_email_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_favorite_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_feedback_disable.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_feedback_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_replay_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_transcribe_disable.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_transcribe_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_upload_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_waiveFee_disable.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_waiveFee_touch.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_feedback_disable.imageset\icon_start_disable%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_favorite_touch.imageset\icon_favorited_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_transcribe_disable.imageset\icon_transcript_disable%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_transcribe_touch.imageset\icon_transcript_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_upload_touch.imageset\icon_attachment_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_waiveFee_disable.imageset\icon_waivefee_disable%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_replay_touch.imageset\icon_replay_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_email_touch.imageset\icon_email_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_waiveFee_touch.imageset\icon_waivefee_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\followUp\followUp_feedback_touch.imageset\icon_start_touch%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\action_navigationbar_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\home\action_navigationbar_icon.imageset\icon_action%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\search_filter_icon.imageset\icon-filter2.png" />
+    <ImageAsset Include="Resources\Images.xcassets\home\home_background.imageset\banner-landingpage%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-667h%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-736h%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\on_time_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\unlicense_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\unverified_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\verified_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\expired_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\expired_icon.imageset\icon-expired%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\on_time_icon.imageset\icon-ontime%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\unlicense_icon.imageset\icon-unlicensed%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\unverified_icon.imageset\icon-unverified%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\profile\verified_icon.imageset\icon-ios-verified%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\delete_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\delete_icon.imageset\icon_delete%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\attachment_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\attachment_icon.imageset\icon_attach%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\available_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\maybe_available_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\not_available_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\common\available_icon.imageset\Status-Available.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\not_available_icon.imageset\Status-NotAvailable.png" />
+    <ImageAsset Include="Resources\Images.xcassets\common\maybe_available_icon.imageset\Status-MaybeAvailable.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\tabbar_available_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\tabbar_maybe_available_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\tabbar_not_available_icon.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\tabbar_available_icon.imageset\Status-Available.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\tabbar_maybe_available_icon.imageset\Status-MaybeAvailable.png" />
+    <ImageAsset Include="Resources\Images.xcassets\dashboard\tabbar_not_available_icon.imageset\Status-NotAvailable.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon57x57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon114x114%402x 2.png" />
+    <ImageAsset Include="Resources\Images.xcassets\action\action_email.imageset\icon_Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\noavatar.png" />
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\vi.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\Images.xcassets\home\home_icon.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\home\home_icon.imageset\home.png" />
+    <BundleResource Include="Resources\Images.xcassets\home\logout_icon.imageset\Contents.json" />
+    <BundleResource Include="Resources\favorite.txt" />
+    <BundleResource Include="Resources\blueArrow.png" />
+    <BundleResource Include="Resources\noimage.png" />
+    <BundleResource Include="Resources\Images.xcassets\tabbar_available_icon.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\profile\star_icon.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\profile\star_icon.imageset\icon_Star-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\profile\star_icon.imageset\icon_Star-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\profile\star_icon.imageset\icon_Star.png" />
+    <BundleResource Include="Resources\.DS_Store" />
+    <BundleResource Include="Resources\Images.xcassets\home\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="src\teleconsult\adapters\search\TCSearchBarDelegate.cs" />
+    <Compile Include="src\teleconsult\adapters\search\TCSearchTableViewSource.cs" />
+    <Compile Include="src\teleconsult\adapters\search\TCSortTableViewSource.cs" />
+    <Compile Include="src\teleconsult\adapters\location\TCLocationManager.cs" />
+    <Compile Include="src\teleconsult\adapters\imageSource\TCImageSource.cs" />
+    <Compile Include="src\teleconsult\adapters\booking\TCBookingTableViewSource.cs" />
+    <Compile Include="src\teleconsult\components\bookingCell\TCBookingCell.cs" />
+    <Compile Include="src\teleconsult\components\bookingCell\TCBookingCell.designer.cs">
+      <DependentUpon>TCBookingCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\bookingCell\bookingAlertCell\TCBookingAlertCell.cs" />
+    <Compile Include="src\teleconsult\components\bookingCell\bookingAlertCell\TCBookingAlertCell.designer.cs">
+      <DependentUpon>TCBookingAlertCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\bookingCell\bookingConfirmCell\TCBookingConfirmCell.cs" />
+    <Compile Include="src\teleconsult\components\bookingCell\bookingConfirmCell\TCBookingConfirmCell.designer.cs">
+      <DependentUpon>TCBookingConfirmCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\bookingCell\bookingPastCell\TCBookingPastCell.cs" />
+    <Compile Include="src\teleconsult\components\bookingCell\bookingPastCell\TCBookingPastCell.designer.cs">
+      <DependentUpon>TCBookingPastCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\bookingCell\bookingRequestCell\TCBookingRequestCell.cs" />
+    <Compile Include="src\teleconsult\components\bookingCell\bookingRequestCell\TCBookingRequestCell.designer.cs">
+      <DependentUpon>TCBookingRequestCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\followingUp\TCFollowingUpViewController.cs" />
+    <Compile Include="src\teleconsult\components\followingUp\TCFollowingUpViewController.designer.cs">
+      <DependentUpon>TCFollowingUpViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\loadingOverlay\TCLoadingOverlay.cs" />
+    <Compile Include="src\teleconsult\components\notfityNetwork\NotifyNetworkView.cs" />
+    <Compile Include="src\teleconsult\components\notfityNetwork\NotifyNetworkView.designer.cs">
+      <DependentUpon>NotifyNetworkView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\preferredTime\TCPreferredTimeViewController.cs" />
+    <Compile Include="src\teleconsult\components\preferredTime\TCPreferredTimeViewController.designer.cs">
+      <DependentUpon>TCPreferredTimeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\profileView\TCProfileView.cs" />
+    <Compile Include="src\teleconsult\components\resultView\TCResultView.cs" />
+    <Compile Include="src\teleconsult\components\resultView\TCResultView.designer.cs">
+      <DependentUpon>TCResultView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\soonestTime\TCSoonestViewController.cs" />
+    <Compile Include="src\teleconsult\components\soonestTime\TCSoonestViewController.designer.cs">
+      <DependentUpon>TCSoonestViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\talknow\TCTalknowViewController.cs" />
+    <Compile Include="src\teleconsult\components\talknow\TCTalknowViewController.designer.cs" />
+    <Compile Include="src\teleconsult\controllers\TCBookingAlertViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCBookingAlertViewController.designer.cs">
+      <DependentUpon>TCBookingAlertViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCBookingConfirmedViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCBookingConfirmedViewController.designer.cs">
+      <DependentUpon>TCBookingConfirmedViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCBookingPastViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCBookingPastViewController.designer.cs">
+      <DependentUpon>TCBookingPastViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCBookingRequestViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCBookingRequestViewController.designer.cs">
+      <DependentUpon>TCBookingRequestViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCBookingTemplateViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCBookingTemplateViewController.designer.cs">
+      <DependentUpon>TCBookingTemplateViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCCommonTemplateViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCCommonTemplateViewController.designer.cs">
+      <DependentUpon>TCCommonTemplateViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCHomeViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCHomeViewController.designer.cs">
+      <DependentUpon>TCHomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCLoginViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCLoginViewController.designer.cs">
+      <DependentUpon>TCLoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCRegisterViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCRegisterViewController.designer.cs">
+      <DependentUpon>TCRegisterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCSearchSpecialistViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCSearchSpecialistViewController.designer.cs">
+      <DependentUpon>TCSearchSpecialistViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCSpecialistProfileViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCSpecialistProfileViewController.designer.cs">
+      <DependentUpon>TCSpecialistProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\TCLocalizabled.cs" />
+    <Compile Include="src\teleconsult\MUtils.cs">
+    </Compile>
+    <Compile Include="src\teleconsult\helper\network\Reachability.cs" />
+    <Compile Include="src\teleconsult\controllers\TCSplashScreenViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCSplashScreenViewController.designer.cs">
+      <DependentUpon>TCSplashScreenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\refreshControl\RefreshTableHeaderView.cs" />
+    <Compile Include="src\teleconsult\controllers\TCDashboardViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCDashboardViewController.designer.cs">
+      <DependentUpon>TCDashboardViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCMainTabViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCMainTabViewController.designer.cs">
+      <DependentUpon>TCMainTabViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\sortSpecialist\TCSortTable.cs" />
+    <Compile Include="src\teleconsult\components\sortSpecialist\TCSortTable.designer.cs">
+      <DependentUpon>TCSortTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\sortSpecialist\sortCell\TCSortCell.cs" />
+    <Compile Include="src\teleconsult\components\sortSpecialist\sortCell\TCSortCell.designer.cs">
+      <DependentUpon>TCSortCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCMyProfileViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCMyProfileViewController.designer.cs">
+      <DependentUpon>TCMyProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCForgottenPasswordViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCForgottenPasswordViewController.designer.cs">
+      <DependentUpon>TCForgottenPasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCChangePasswordViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCChangePasswordViewController.designer.cs">
+      <DependentUpon>TCChangePasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\enquiry\TCEnquiryViewController.cs" />
+    <Compile Include="src\teleconsult\components\enquiry\TCEnquiryViewController.designer.cs">
+      <DependentUpon>TCEnquiryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\datePicker\TCDatetimePicker.cs" />
+    <Compile Include="src\teleconsult\components\datePicker\TCDatetimePicker.designer.cs">
+      <DependentUpon>TCDatetimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\message\TCMessageView.cs" />
+    <Compile Include="src\teleconsult\components\alertView\TCAlertViewController.cs" />
+    <Compile Include="src\teleconsult\components\talknow\talknowState\TCTalknowStateView.cs" />
+    <Compile Include="src\teleconsult\components\talknow\talknowState\TCTalknowStateView.designer.cs">
+      <DependentUpon>TCTalknowStateView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCListFavoriteViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCListFavoriteViewController.designer.cs">
+      <DependentUpon>TCListFavoriteViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\adapters\favorite\TCFavoriteTableViewSource.cs" />
+    <Compile Include="src\teleconsult\components\feedback\ratingbar\TCRatingBar.cs" />
+    <Compile Include="src\teleconsult\components\feedback\TCFeedbackViewController.cs" />
+    <Compile Include="src\teleconsult\components\feedback\TCFeedbackViewController.designer.cs">
+      <DependentUpon>TCFeedbackViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\adapters\tableviewSource\TCTableViewSource.cs" />
+    <Compile Include="src\teleconsult\adapters\asynImageDownload\TCAsyncImage.cs" />
+    <Compile Include="src\teleconsult\helper\getProfile\TCProfileSpecialistHelper.cs" />
+    <Compile Include="src\teleconsult\helper\addFavourite\TCFavoriteHelper.cs" />
+    <Compile Include="src\teleconsult\helper\sendPhoto\TCSendPhotoHelper.cs" />
+    <Compile Include="src\teleconsult\helper\getBooking\TCBookingHelper.cs" />
+    <Compile Include="src\teleconsult\components\bookView\TCBookView.cs" />
+    <Compile Include="src\teleconsult\components\bookView\TCBookView.designer.cs">
+      <DependentUpon>TCBookView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\actionView\TCActionView.cs" />
+    <Compile Include="src\teleconsult\components\actionView\TCActionView.designer.cs">
+      <DependentUpon>TCActionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\talknow\talknowReschedule\TCTalknowRescheduleView.cs" />
+    <Compile Include="src\teleconsult\components\talknow\talkNowDefer\TCTalknowDeferView.cs" />
+    <Compile Include="src\teleconsult\components\talknow\talkNowDefer\TCTalknowDeferView.designer.cs">
+      <DependentUpon>TCTalknowDeferView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCUpdateProfileViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCUpdateProfileViewController.designer.cs">
+      <DependentUpon>TCUpdateProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCActiveCodeViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCActiveCodeViewController.designer.cs">
+      <DependentUpon>TCActiveCodeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\enquiry\popup\TCPopupMessage.cs" />
+    <Compile Include="src\teleconsult\components\enquiry\popup\TCPopupMessage.designer.cs">
+      <DependentUpon>TCPopupMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\fileManager\TCFileManager.cs" />
+    <Compile Include="src\teleconsult\components\fileManager\TCFileManager.designer.cs">
+      <DependentUpon>TCFileManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\alertLogo\TCLogoAlertViewController.cs" />
+    <Compile Include="src\teleconsult\components\alertLogo\TCLogoAlertViewController.designer.cs">
+      <DependentUpon>TCLogoAlertViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\helper\getConfig\TCConfigHelper.cs" />
+    <Compile Include="src\teleconsult\model\dto\MDocumentDTO.cs" />
+    <Compile Include="src\teleconsult\model\dto\MFeedbackDTO.cs" />
+    <Compile Include="src\teleconsult\MConstants.cs" />
+    <Compile Include="src\teleconsult\components\consultationRef\alert\TCConsultationAlertViewController.cs" />
+    <Compile Include="src\teleconsult\components\consultationRef\alert\TCConsultationAlertViewController.designer.cs">
+      <DependentUpon>TCConsultationAlertViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\consultationRef\confirm\TCConsultationConfirmViewController.cs" />
+    <Compile Include="src\teleconsult\components\consultationRef\confirm\TCConsultationConfirmViewController.designer.cs">
+      <DependentUpon>TCConsultationConfirmViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\consultationRef\request\TCConsultationRequestViewController.cs" />
+    <Compile Include="src\teleconsult\components\consultationRef\request\TCConsultationRequestViewController.designer.cs">
+      <DependentUpon>TCConsultationRequestViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\consultationRef\template\TCConsultationTemplateViewController.cs" />
+    <Compile Include="src\teleconsult\components\consultationRef\template\TCConsultationTemplateViewController.designer.cs">
+      <DependentUpon>TCConsultationTemplateViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\consultationRef\history\TCConsultationPastViewController.cs" />
+    <Compile Include="src\teleconsult\components\consultationRef\history\TCConsultationPastViewController.designer.cs">
+      <DependentUpon>TCConsultationPastViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\helper\login\TCSignInHelper.cs" />
+    <Compile Include="src\teleconsult\factory\TCGlobals.cs" />
+    <Compile Include="src\teleconsult\factory\theme\TCTheme.cs" />
+    <Compile Include="src\teleconsult\factory\viewIdentity\TCViewIdentity.cs" />
+    <Compile Include="src\teleconsult\model\dto\MTextAttributeDTO.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\searchCellOne\TCSearchCellOne.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\searchCellOne\TCSearchCellOne.designer.cs">
+      <DependentUpon>TCSearchCellOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\searchCell\searchCellTwo\TCSearchCellTwo.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\searchCellTwo\TCSearchCellTwo.designer.cs">
+      <DependentUpon>TCSearchCellTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\searchCell\TCSearchCellTemplate.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\TCSearchCellTemplate.designer.cs">
+      <DependentUpon>TCSearchCellTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\helper\sendEmail\TCSendEmailHelper.cs" />
+    <Compile Include="src\teleconsult\components\sendFeedback\TCSendFeedbackComponent.cs" />
+    <Compile Include="src\teleconsult\helper\updateWaiveFee\TCUpdateWaiveFeeHelper.cs" />
+    <Compile Include="src\teleconsult\helper\transcript\TCTranscriptHelper.cs" />
+    <Compile Include="src\teleconsult\helper\logout\TCLogOutHelper.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\searchCellThree\TCSearchCellThree.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\searchCellThree\TCSearchCellThree.designer.cs">
+      <DependentUpon>TCSearchCellThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\searchCell\searchCellFour\TCSearchCellFour.cs" />
+    <Compile Include="src\teleconsult\components\searchCell\searchCellFour\TCSearchCellFour.designer.cs">
+      <DependentUpon>TCSearchCellFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\model\dto\MCellDTO.cs" />
+    <Compile Include="src\teleconsult\components\talknow\talknowReschedule\TCTalknowRescheduleView.designer.cs">
+      <DependentUpon>TCTalknowRescheduleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\followingUp\TCReplayViewController.cs" />
+    <Compile Include="src\teleconsult\components\followingUp\TCReplayViewController.designer.cs">
+      <DependentUpon>TCReplayViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\sendEmail\TCEmailProfileComponent.cs" />
+    <Compile Include="src\teleconsult\components\sendEmail\TCEmailProfileComponent.designer.cs">
+      <DependentUpon>TCEmailProfileComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\helper\getStatusUser\TCCurrentUserHelper.cs" />
+    <Compile Include="src\teleconsult\model\dto\MLicenseDTO.cs" />
+    <Compile Include="src\teleconsult\components\feedbackInfo\TCFeedbackInfoView.cs" />
+    <Compile Include="src\teleconsult\components\feedbackInfo\TCFeedbackInfoView.designer.cs">
+      <DependentUpon>TCFeedbackInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\adapters\webview\TCWebViewDelegate.cs" />
+    <Compile Include="src\teleconsult\model\dto\MAlertDTO.cs" />
+    <Compile Include="src\teleconsult\helper\deleteBooking\TCDeleteBookingHelper.cs" />
+    <Compile Include="src\teleconsult\helper\deleteFile\TCDeleteFileHelper.cs" />
+    <Compile Include="src\teleconsult\helper\addFileHelper\TCFileManagerHelper.cs" />
+    <Compile Include="src\teleconsult\controllers\TCChangeStatusViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCChangeStatusViewController.designer.cs">
+      <DependentUpon>TCChangeStatusViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\controllers\TCEmptyViewController.cs" />
+    <Compile Include="src\teleconsult\controllers\TCEmptyViewController.designer.cs">
+      <DependentUpon>TCEmptyViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\components\statusCell\TCStatusCell.cs" />
+    <Compile Include="src\teleconsult\components\statusCell\TCStatusCell.designer.cs">
+      <DependentUpon>TCStatusCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\teleconsult\helper\updateStatus\TCUpdateStatusHelper.cs" />
+    <Compile Include="src\teleconsult\adapters\status\TCStatusTableViewSource.cs" />
+    <Compile Include="src\teleconsult\helper\search\TCSearchHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
+    <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingAlertCell\TCBookingAlertCell_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingAlertCell\TCBookingAlertCell_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingConfirmCell\TCBookingConfirmCell_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingConfirmCell\TCBookingConfirmCell_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingPastCell\TCBookingPastCell_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingPastCell\TCBookingPastCell_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingRequestCell\TCBookingRequestCell_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookingCell\bookingRequestCell\TCBookingRequestCell_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\followingUp\TCFollowingUpViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\followingUp\TCFollowingUpViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\notfityNetwork\NotifyNetworkView.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\preferredTime\TCPreferredTimeViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\preferredTime\TCPreferredTimeViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\resultView\TCResultView.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\soonestTime\TCSoonestViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\soonestTime\TCSoonestViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\talknow\TCTalknowViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\talknow\TCTalknowViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\controllers\TCSplashScreenViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\controllers\TCSplashScreenViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\sortSpecialist\TCSortTable_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\sortSpecialist\sortCell\TCSortCell_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\sortSpecialist\sortCell\TCSortCell_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\enquiry\TCEnquiryViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\enquiry\TCEnquiryViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\datePicker\TCDatetimePicker_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\talknow\talknowState\TCTalknowStateView_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\feedback\TCFeedbackViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\feedback\TCFeedbackViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\bookView\TCBookView_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\actionView\TCActionView_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\talknow\talknowReschedule\TCTalknowRescheduleView_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\talknow\talkNowDefer\TCTalknowDeferView_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\enquiry\popup\TCPopupMessage_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\fileManager\TCFileManager.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\alertLogo\TCLogoAlertViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\alertLogo\TCLogoAlertViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\alert\TCConsultationAlertViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\alert\TCConsultationAlertViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\confirm\TCConsultationConfirmViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\confirm\TCConsultationConfirmViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\request\TCConsultationRequestViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\request\TCConsultationRequestViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\history\TCConsultationPastViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\consultationRef\history\TCConsultationPastViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellOne\TCSearchCellOne_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellOne\TCSearchCellOne_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellTwo\TCSearchCellTwo_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellTwo\TCSearchCellTwo_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellThree\TCSearchCellThree_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellThree\TCSearchCellThree_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellFour\TCSearchCellFour_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\searchCell\searchCellFour\TCSearchCellFour_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\followingUp\TCReplayViewController_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\followingUp\TCReplayViewController_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\sendEmail\TCEmailProfileComponent_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\sendEmail\TCEmailProfileComponent_iPad.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\feedbackInfo\TCFeedbackInfoView_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\statusCell\TCStatusCell_iPhone.xib" />
+    <InterfaceDefinition Include="src\teleconsult\components\statusCell\TCStatusCell_iPad.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="signalr">
+      <Version>2.1.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\teleconsult\helper\getStatusUser\" />
+    <Folder Include="src\teleconsult\components\feedbackInfo\" />
+    <Folder Include="src\teleconsult\helper\deleteFile\" />
+    <Folder Include="src\teleconsult\components\statusCell\" />
+    <Folder Include="src\teleconsult\helper\updateStatus\" />
+    <Folder Include="src\teleconsult\adapters\status\" />
+    <Folder Include="src\teleconsult\helper\search\" />
+  </ItemGroup>
+  <Target Name="_CompileITunesMetadata" DependsOnTargets="_DetectSdkLocations;_DetectAppManifest;_GenerateBundleName;_CompileAppManifest">
+    <Message Text="Skipping CompileITunesMetadata task to prevent inclusion of iTunesMetadata.plist in the IPA" />
+  </Target>
+</Project>

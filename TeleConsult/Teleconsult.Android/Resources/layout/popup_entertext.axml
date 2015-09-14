@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/custom_dialog"
+    android:padding="20dp">
+    <TextView
+        android:text="Tile of popup"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tv_title_entertext_popup"
+        style="@android:style/TextAppearance.Medium.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF909090"
+        android:layout_marginTop="@dimen/pad_top" />
+    <EditText
+        android:id="@+id/edit_firstname_search"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_top"
+        android:hint="@string/first_name" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/pad_top">
+        <Button
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_search_advanced"
+            android:layout_marginRight="@dimen/pad_right" />
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_cancel_search"
+            android:layout_marginLeft="@dimen/pad_left" />
+    </LinearLayout>
+</LinearLayout>
